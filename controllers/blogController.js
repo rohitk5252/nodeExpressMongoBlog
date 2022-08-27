@@ -24,7 +24,6 @@ const blog_details = (req,res) => {
 }
 
 
-console.log('----------')
 const blog_create_get = (req, res) => {
     res.render('create',{title:'Create New Blog'});
 }
