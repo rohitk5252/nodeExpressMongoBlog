@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // connect to Mongodb
-// const dbURI = 'mongodb+srv://rohitk5252:rohitk5252@nodetuts.si4bphx.mongodb.net/node-tuts?retryWrites=true&w=majority';
+
 mongoose.connect(process.env.MONGO_CONNECTION_URL)
     .then((result)=> app.listen(PORT,()=>{
         console.log(`listening on port ${PORT}`);
